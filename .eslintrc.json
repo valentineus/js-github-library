@@ -2,6 +2,7 @@
     "env": {
         "browser": true,
         "es6": true,
+        "jest/globals": true,
         "jquery": true,
         "node": true
     },
@@ -11,6 +12,7 @@
         "jquery",
         "plugin:import/errors",
         "plugin:import/warnings",
+        "plugin:jest/recommended",
         "plugin:node/recommended",
         "plugin:promise/recommended",
         "plugin:security/recommended",
@@ -21,6 +23,7 @@
     "plugins": [
         "compat",
         "import",
+        "jest",
         "no-loops",
         "no-loops",
         "no-use-extend-native",

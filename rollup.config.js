@@ -12,7 +12,7 @@ export default [ {
     plugins: [
         babel({
             babelrc: false,
-            comments: false,
+            comments: true,
             presets: [ [ "es2015", { modules: false } ] ]
         })
     ]
@@ -31,10 +31,10 @@ export default [ {
             presets: [ [ "es2015", { modules: false } ] ]
         }),
         uglify({
-            sourcemap: false,
-            warnings: true,
+            ie8: true,
+            sourcemap: true,
             toplevel: false,
-            ie8: true
+            warnings: true
         })
     ]
 } ];
